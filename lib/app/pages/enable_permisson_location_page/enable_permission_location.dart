@@ -33,7 +33,7 @@ class _EnablePermissionLocationState extends State<EnablePermissionLocation> {
 
     showDialog(
       context: context,
-      // barrierDismissible: false,
+      barrierDismissible: false,
       builder: (context) {
         return AlertDialog(
           shape: RoundedRectangleBorder(

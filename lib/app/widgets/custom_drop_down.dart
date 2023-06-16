@@ -28,11 +28,12 @@ class CustomDropDown extends StatelessWidget {
         value: itemSelected != null ? itemSelected : null,
         padding: EdgeInsets.symmetric(horizontal: 10),
         underline: DropdownButtonHideUnderline(child: Container()),
-        hint: Text(hintText),
+        hint: Text(
+          hintText,
+          style: TextStyle(color: ColorPalette.hintTextColor),
+        ),
         style: TextStyle(
-          color: itemSelected != null
-              ? ColorPalette.textPrimaryColor
-              : ColorPalette.hintTextColor,
+          color: ColorPalette.textPrimaryColor,
           fontWeight:
               itemSelected != null ? FontWeight.bold : FontWeight.normal,
         ),
